@@ -72,6 +72,9 @@ function createWindow () {
 		// Dereference the window object, usually you would store windows
 		// in an array if your app supports multi windows, this is the time
 		// when you should delete the corresponding element.
+		// 取消引用窗口对象，通常你会存储窗口
+		// 如果您的应用程序支持多窗口，则在数组中，这是时间
+		// 什么时候应该删除相应的元素。
 		win = null;
 	});
 
