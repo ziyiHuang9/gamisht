@@ -24,7 +24,7 @@ body {
 
 /* Simple Button styles*/
 button {
-	background-color: rgb(65, 62, 62);
+	/* background-image: url('../assets/icons/BOUTON\ JOUER.PNG'); */
 }
 
 /* Simple Button Style on Hover */
@@ -34,7 +34,8 @@ button:hover {
 
 /* General Styling for Menu Screens */
 [data-screen] {
-
+	background-image:url('../assets/images/brouillon_affiche.JPG');
+	background-repeat:no-repeat;
 }
 
 /**
@@ -45,12 +46,18 @@ button:hover {
 
 /* Main Menu Styling */
 [data-screen="main"] {
-
+	background-image:url('../assets/images/dessin_jaune_affiche.PNG');
+	background-repeat:no-repeat;
 }
 
 /* Main Menu Buttons Styling */
 [data-screen="main"] button {
+	background-image: url('../assets/icons/BOUTON\ JOUER.PNG');
+	background-size: cover;
+}
 
+[data-screen="main"] button:hover {
+	transform: scale(1.1);
 }
 
 /**
@@ -87,7 +94,9 @@ button:hover {
 
 /* Choice Buttons style */
 [data-component="choice-container"] button {
-
+	background-color: rgb(92, 93, 109);
+	border-radius: 20px;
+	opacity: 0.9;
 }
 
 /* Choice Button Style on Hover */
@@ -97,6 +106,7 @@ button:hover {
 
 /* Text Box styling */
 [data-component="text-box"] {
+	position: absolute;
 
 }
 
@@ -107,12 +117,12 @@ button:hover {
 
 /* Style for Centered Text */
 [data-component="centered-dialog"] {
-
+	color:gray;
 }
 
 /* Character Images Styles */
 [data-screen="game"] [data-character] {
-
+	height: 1000px;
 }
 
 /* Other Images Styles */
@@ -156,15 +166,15 @@ button:hover {
 
 /* Use the background property to set a color for these */
 input[type=range]:focus::-webkit-slider-runnable-track {
-
+	color: green;
 }
 
 input[type=range]::-webkit-slider-runnable-track {
-
+	color: aqua;
 }
 
 input[type=range]:focus::-ms-fill-upper {
-
+	color: pink;
 }
 
 input[type=range]:focus::-ms-fill-lower {
@@ -181,13 +191,6 @@ input[type=range]::-ms-fill-lower {
 
 input[type=range]::-ms-fill-upper {
 
-}
-
-.D{
-    padding-left: 400px;
-}
-.L{
-	padding-right: 400px;
 }
 
 /* Styles for the desktop version of the Quick Menu*/
